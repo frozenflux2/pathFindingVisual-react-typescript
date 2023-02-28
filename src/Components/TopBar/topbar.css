@@ -1,0 +1,111 @@
+/**
+ *
+ * @Project :  ${PathFinding Visualizer(Path Finding Visualizer)}
+ * @CreatedBy ${Gunjan Kadu}
+ * @Email  ${agunjan.kadu@gmail.com}
+ * @Github https://github.com/GunjanKadu/
+ * @date   2020-09-10 23:47:40
+ *
+ */
+.navbar-dark {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.selectorMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.selectorMenu select {
+  height: 36px;
+  width: 208px;
+  border-radius: none;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: lightgray;
+  padding-left: 10px;
+}
+.nav__navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.my-dropdown-item {
+  color: black;
+  background-color: white;
+}
+
+.my-dropdown-item:hover {
+  color: white;
+  background-color: black;
+}
+
+.non-visualize-button {
+  color: white;
+  background-color: #5c7cfa;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-bottom: -10px;
+  transition: transform 0.2s linear;
+}
+
+.non-visualize-button:hover {
+  transform: translateY(-10%);
+  background-color: #5c7cfa;
+}
+.non-visualize-button:disabled {
+  color: white;
+  background-color: red;
+  box-shadow: 0 3px 3px 0 red;
+}
+.visualize-it-button {
+  border: none;
+  color: white;
+  background-color: #339af0;
+  font-family: Arial;
+  box-shadow: 0 3px 3px 0 #74c0fc;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 2vh;
+  transition: transform 0.2s linear;
+}
+
+.visualize-it-button:disabled {
+  background-color: red;
+  box-shadow: 0 3px 3px 0 red;
+}
+.visualize-it-button:disabled:hover {
+  transform: translateY(-10%);
+  background-color: red;
+}
+.visualize-it-button:hover {
+  transform: translateY(-10%);
+  background-color: #339af0;
+}
+.nav {
+  height: 100vh;
+  display: flex;
+}
+.border {
+  border: 2px solid lightgray;
+}
+.how-to-use-button {
+  background-color: #40c057;
+  box-shadow: 0 3px 3px 0 #8ce99a;
+  color: white;
+  border: none;
+  transition: transform 0.2s linear;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.how-to-use-button:hover {
+  transform: translateY(-10%);
+  background-color: #40c057;
+}

@@ -1,0 +1,30 @@
+/**
+ *
+ * @Project :  ${PathFinding Visualizer(Path Finding Visualizer)}
+ * @CreatedBy ${Gunjan Kadu}
+ * @Email  ${agunjan.kadu@gmail.com}
+ * @Github https://github.com/GunjanKadu/
+ * @date   2020-09-10 23:47:40
+ *
+ */
+.information {
+  width: 800px;
+  display: inline-block;
+  font-size: 16px;
+  height: fit-content;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.h3 {
+  font-weight: bold;
+}
+.holder {
+  display: flex;
+}
+/* .header {
+  flex: 0.18;
+/* } */
+.body {
+  flex: 1;
+}
