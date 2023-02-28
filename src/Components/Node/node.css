@@ -1,0 +1,130 @@
+/**
+ *
+ * @Project :  ${PathFinding Visualizer(Path Finding Visualizer)}
+ * @CreatedBy ${Gunjan Kadu}
+ * @Email  ${agunjan.kadu@gmail.com}
+ * @Github https://github.com/GunjanKadu/
+ * @date   2020-09-10 23:47:40
+ *
+ */
+.node-box {
+  width: calc(4.4375vh - 5px);
+  height: calc(4.4375vh - 5px);
+  background-color: rgba(161, 166, 163, 0.6);
+  display: inline-block;
+  margin: 3px;
+  box-shadow: 0 2px 0 #bbb;
+  cursor: pointer;
+}
+.node {
+  width: calc(4.4375vh - 5px);
+  height: calc(4.4375vh - 5px);
+  display: inline-block;
+  text-align: center;
+  color: black;
+  -webkit-user-select: none; /* Webkit */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10  */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.node-start {
+  background-color: green;
+  color: green;
+  width: calc(4.4375vh - 5px);
+  height: calc(4.4375vh - 5px);
+}
+
+.node-end {
+  background-color: red;
+  color: red;
+  width: calc(4.4375vh - 5px);
+  height: calc(4.4375vh - 5px);
+}
+
+.node-wall {
+  width: calc(4.4375vh - 5px);
+  height: calc(4.4375vh - 5px);
+  background-color: black;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.node-visited {
+  background-color: #3074f2;
+  animation-name: visited;
+  animation-duration: 3s;
+}
+
+@keyframes visited {
+  from {
+    transform: scale(0.25);
+    background-color: red;
+  }
+  50% {
+    background-color: purple;
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+    background-color: #3074f2;
+  }
+}
+
+.node-shortest-path {
+  background-color: yellow;
+  animation-name: shortest;
+  animation-duration: 3s;
+}
+
+@keyframes shortest {
+  from {
+    transform: scale(0.25);
+    background-color: red;
+  }
+  50% {
+    transform: scale(1);
+    background-color: orange;
+  }
+  to {
+    transform: scale(1);
+    background-color: yellow;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .node-box {
+    width: calc(4.4375vh - 10px);
+    height: calc(4.4375vh - 10px);
+  }
+  .node {
+    width: calc(4.4375vh - 10px);
+    height: calc(4.4375vh - 10px);
+  }
+
+  .node-start {
+    width: calc(4.4375vh - 10px);
+    height: calc(4.4375vh - 10px);
+  }
+
+  .node-end {
+    width: calc(4.4375vh - 10px);
+    height: calc(4.4375vh - 10px);
+  }
+
+  .node-wall {
+    width: calc(4.4375vh - 10px);
+    height: calc(4.4375vh - 10px);
+  }
+}
+.alert {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  top: 0;
+  right: 5px;
+  z-index: 10;
+}
+.infoNode {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
