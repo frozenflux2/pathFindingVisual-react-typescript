@@ -69,7 +69,7 @@ The default setting is "Fast."
 ## Build Guide
 
 ```bash
-git clone https://github.com/GunjanKadu/PathFindingVisualizer.git
+git clone https://github.com/lumi518/pathFindingVisual-react-typescript.git
 cd Pathfinding-Visualizer
 yarn install
 yarn start
